@@ -17,12 +17,11 @@ public class Main {
     public static void Task1(){
         System.out.println("Задание1");
         int[] arr = generateRandomArray();
-        int max = 0;
+        int summ = 0;
         for( int i=0;i<arr.length; i++ ) {
-            max = arr[i]+ max;
-            if(i == arr.length-1) {
-                System.out.println("Сумма всех трат за месяц = " +max);
-            }
+            summ = arr[i]+ summ;
+                System.out.println("Сумма всех трат за месяц = " + summ);
+
             }
         }
 
@@ -56,9 +55,8 @@ System.out.println("Минимальная трата за день= "+min);
         for( int i=0;i<arr.length; i++ ) {
             System.out.println(arr[i]);
             max = arr[i]+ max;
-            if(i == arr.length-1){
             sr = max/ arr.length;}
-        }
+
         System.out.println("Среднее число трат за месяц= "+ sr);
     }
 
